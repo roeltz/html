@@ -1,8 +1,20 @@
 {
 	"name": "roeltz/html",
+	"license": "MIT",
+	"description": "Simple, no-concatenation, HTML building in PHP",
+	"authors": [
+		{
+			"name": "Leonardo Rothe Tagliafico",
+			"email": "leo_rothe@msn.com",
+			"homepage": "http://github.com/roeltz"
+		}
+	],
 	"autoload": {
 		"psr-0": {
 			"Roeltz\\": "src"
 		}
+	},
+	"require": {
+		"php": ">=5.4.0"
 	}
 }
