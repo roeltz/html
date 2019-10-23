@@ -1,0 +1,8 @@
+{
+	"name": "roeltz/html",
+	"autoload": {
+		"psr-0": {
+			"Roeltz\\": "src"
+		}
+	}
+}
