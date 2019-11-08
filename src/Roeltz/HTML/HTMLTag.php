@@ -1,5 +1,7 @@
 <?php
 
+namespace Roeltz\HTML;
+
 class HTMLTag {
 
 	const SELF_CLOSING_TYPES = " area base br col command embed hr img input keygen link meta param source track wbr ";
