@@ -4,7 +4,7 @@ namespace Roeltz\HTML;
 
 class HTML {
 
-	function __callStatic($method, $args) {
+	static function __callStatic($method, $args) {
 		return new HTMLTag($method, ...$args);
 	}
 
