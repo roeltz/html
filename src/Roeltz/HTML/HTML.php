@@ -51,17 +51,17 @@ class HTML {
 			}
 		}
 	
-		return html("label", ["for"=>$for], [$text]);
+		return new HTMLTag("label", ["for"=>$for], [$text]);
 	}
 	
 	function p($children) {
 		if (is_string($children))
 			$children = [$children];
-		return html("p", [], $children);
+		return new HTMLTag("p", [], $children);
 	}
 	
 	function pre($text) {
-		return html("pre", [], [$text]);
+		return new HTMLTag("pre", [], [$text]);
 	}
 	
 	function radio($attr, $value = null, $checked = false) {
@@ -85,6 +85,6 @@ class HTML {
 	
 	function textarea($attr, $value) {
 		$attr = self::defaultAttr("name", $attr);
-		return html("textarea", $attr, [$value]);
+		return new HTMLTag("textarea", $attr, [$value]);
 	}
 }
